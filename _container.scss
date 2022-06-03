@@ -1,0 +1,104 @@
+$color1:#FFFFFF;
+$color2:#3F5D45;
+$color3:#2C4832;
+$color4:#EAF0ED;
+$color5:#FFE180;
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    .list{
+        width: 300px;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 42px;
+        h3{
+            color: $color4;
+            background-color: $color2;
+            padding: 16px;
+        }
+        ul{
+            li{
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: $color2;
+                    border: 1px solid $color4;
+                    padding: 16px;
+                    &:hover{
+                        color: $color4;
+                        background-color: $color2;
+                    }
+                }
+            }
+        }
+        .style1{    
+            background-color: $color4;
+        }
+    }
+    .content{
+        width: 620px;
+        margin-right: 42px;
+        margin-bottom: 10px;
+        .product{ 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .productimg{
+                width: 300px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                .tag{
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                    writing-mode: vertical-lr;
+                    color: $color4;
+                    background-color: $color2;
+                    padding: 10px;
+                }
+                .heart{
+                    position: absolute;
+                    top: 19px;
+                    right: 22px;
+                }
+                .price{
+                    color: $color2;
+                    display: flex;
+                    font-size: 20px;
+                    text-align: center;
+                    p{
+                        width: 173px;
+                        border-right: 1px solid $color4;
+                        border-left: 1px solid $color4;
+                        padding: 14px;
+                    }
+                    span{
+                        width: 127px;
+                        border-right: 1px solid $color4;
+                        padding: 14px;
+                    }
+                }
+                .shopping_car{
+                    font-size: 24px;
+                    color: $color2;
+                    background-color: $color4;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 16px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
